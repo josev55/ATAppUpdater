@@ -41,6 +41,8 @@
 - (void)forceOpenNewAppVersion:(BOOL)force
 __attribute((deprecated("Use 'showUpdateWithForce' or 'showUpdateWithConfirmation' instead.")));
 
+- (void)checkNewAppVersion:(void(^)(BOOL newVersion, NSString *version))completion;
+
 /** Set the UIAlertView title. NSLocalizedString() supported. */
 @property (nonatomic, weak) NSString *alertTitle;
 
